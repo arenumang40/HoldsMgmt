@@ -1,0 +1,43 @@
+services:
+  wiremock:
+    image: wiremock/wiremock:latest
+    ports:
+      - 9090:8080
+    volumes:
+      - ./src/test/resources/wiremock/:/home/wiremock
+  selenium:
+    image: selenium/standalone-chromium:126.0
+    container_name: selenium
+    ports:
+      - 7900:7900
+      - 4444:4444
+    shm_size: 2gb
+    volumes:
+      - ./src/test/resources/downloadedFiles/:/home/seluser/Downloads
+      - ./src/test/resources/uploadedFiles/:/home/seluser/uploadedFiles
+  tests:
+      build: .
+      environment:
+        APPLICATION_BASE_URL: ${APPLICATION_BASE_URL:-https://apps-holds-mgmt-mgmt-sit.apps.usmegocp001.dhl.com/}
+        APPLICATION_USERNAME: ${APPLICATION_USERNAME}
+        APPLICATION_PASSWORD: ${APPLICATION_PASSWORD}
+        SELENIUM_URL: ${SELENIUM_URL:-http://selenium:4444/}
+        BROWSER_NAME: ${BROWSER_NAME:-chrome}
+        SELENIUM_IMPLICIT_WAIT: ${SELENIUM_IMPLICIT_WAIT:-5}
+        SELENIUM_SHORT_WAIT: ${SELENIUM_SHORT_WAIT:-2}
+        SELENIUM_LONG_WAIT: ${SELENIUM_LONG_WAIT:-15}
+        SELENIUM_CONTAINER_ID: ${SELENIUM_CONTAINER_ID:-selenium}
+        SELENIUM_UPLOAD_PATH: ${SELENIUM_UPLOAD_PATH:-/home/seluser/uploadedFiles/}
+        SELENIUM_DOWNLOAD_PATH: ${SELENIUM_DOWNLOAD_PATH:-/home/seluser/Downloads/}
+        FILE_DOWNLOAD_PATH: ${FILE_DOWNLOAD_PATH:-\src\test\resources\downloadedFiles\}
+        DOWNLOAD_FILE_NAME: ${DOWNLOAD_FILE_NAME:-HOLDS MANAGEMENT}
+        API_ENVIRONMENT: ${API_ENVIRONMENT:-salesforce}
+        API_VERSION: ${API_VERSION:-v58.0}
+        APPLICATION_API_BASE_URL: ${APPLICATION_API_BASE_URL:-https://dhlglobalmail--sit2.sandbox.my.salesforce.com/}
+        CLIENT_ID: ${APPLICATION_CLIENT_ID}
+        CLIENT_SECRET: ${APPLICATION_CLIENT_SECRET}
+        SALESFORCE_USERNAME: ${APPLICATION_SALESFORCE_USERNAME}
+        SALESFORCE_PASSWORD: ${APPLICATION_SALESFORCE_PASSWORD}
+      depends_on:
+        - selenium
+        - wiremock

@@ -1,0 +1,42 @@
+services:
+#  backend:
+#    build:
+#      context: ../../holds-mgmt/service-holds-mgmt/
+#      dockerfile: ./Dockerfile.test
+#    ports:
+#      - 8080:8080
+#    environment:
+#      SALESFORCE_URI: http://wiremock:8080
+#    depends_on:
+#      - wiremock
+  wiremock:
+    image: wiremock/wiremock:latest
+    ports:
+      - 9090:8080
+    volumes:
+      - ./src/test/resources/wiremock/:/home/wiremock
+  selenium:
+    image: selenium/standalone-chromium:126.0
+    container_name: selenium
+    ports:
+      - 7900:7900
+      - 4444:4444
+    shm_size: 2gb
+#  frontend:
+#    build:
+#      context: ../
+#      dockerfile: ./Dockerfile.test
+  tests:
+    build: .
+    environment:
+      APPLICATION_BASE_URL: ${APPLICATION_BASE_URL:-https://frontend/}
+      APPLICATION_USERNAME: ${APPLICATION_USERNAME}
+      APPLICATION_PASSWORD: ${APPLICATION_PASSWORD}
+      SELENIUM_URL: ${SELENIUM_URL:-http://selenium:4444/}
+      BROWSER_NAME: ${BROWSER_NAME:-chrome}
+      SELENIUM_IMPLICIT_WAIT: ${SELENIUM_IMPLICIT_WAIT}
+      SELENIUM_SHORT_WAIT: ${SELENIUM_SHORT_WAIT}
+    depends_on:
+      - selenium
+      - wiremock
+#      - frontend

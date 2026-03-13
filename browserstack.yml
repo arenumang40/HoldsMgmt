@@ -1,0 +1,23 @@
+projectName: holds_management_automation
+buildName: holds
+buildIdentifier: '#${BUILD_NUMBER}' # Supports strings along with either/both ${expression}
+platforms:
+  - os: Windows
+    osVersion: 11
+    browserName: Chrome
+    browserVersion: latest
+parallelsPerPlatform: 1
+browserstackLocal: true
+browserStackLocalOptions:
+debug: true
+networkLogs: true
+consoleLogs: errors
+testObservability: true
+httpsProxy: https://b2b-http.dhl.com:8080
+#testOrchestrationOptions:
+#  retryTestsOnFailure:
+#    enabled: true
+#    maxRetries: 3
+#  runPreviouslyFailedFirst: true
+#  abortBuildOnFailure:
+#    enabled: false
