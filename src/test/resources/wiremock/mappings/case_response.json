@@ -1,0 +1,201 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern": "/services/apexrest/HoldCaseFeeds(.*)"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "TrackedChanges": [
+        {
+            "CreatedBy": "Daymel Marrero",
+            "EventName": "Case Created",
+            "CreatedDate": "2024-04-19T16:46:31.000Z"
+        },
+        {
+            "CreatedBy": "Daymel Marrero",
+            "EventName": "Email",
+            "EmailToAddress": "silvia.velazquez@dhl.com",
+            "EmailSubject": "ITEM ON HOLD — Bedabox LLC dba Shipmonk - NV RUBY HAS FULFILLMENT LLC 5122498.    [ ref:!00D5t08h73.!5009K0CFABV:ref ]",
+            "EmailMessageDate": "2024-04-20T01:20:01.000Z",
+            "EmailFromAddress": "daymel.marrero@dhl.com",
+            "EmailBody": "<html>\n<head>\n\t<title></title>\n</head>\n<body>This is a test email for feeds testing<img src=\"https://dhlglobalmail--dev08.sandbox.my.salesforce.com/servlet/servlet.ImageServer?oid=00D5t0000008h73&esid=0189K000000nynp&from=int\"><br><br>ref:!00D5t08h73.!5009K0CFABV:ref</body>\n</html>",
+            "CreatedDate": "2024-04-20T01:19:34.000Z",
+            "Attachments": null
+        },
+        {
+            "CreatedBy": "Daymel Marrero",
+            "EventName": "Email",
+            "EmailToAddress": "silvia.velazquez@dhl.com",
+            "EmailSubject": "RE: ITEM ON HOLD — Bedabox LLC dba Shipmonk - NV RUBY HAS FULFILLMENT LLC 5122498.    [ ref:!00D5t08h73.!5009K0CFABV:ref ]",
+            "EmailMessageDate": "2024-04-20T01:25:39.000Z",
+            "EmailFromAddress": "daymel.marrero@dhl.com",
+            "EmailBody": "<html>\n<head>\n\t<title></title>\n</head>\n<body>This is a second email created to test the feeds<br clear=\"none\" />\n<br clear=\"none\" />\n<br clear=\"none\" />\n--------------- Original Message ---------------<br clear=\"none\" />\n<b>From:</b> Daymel Marrero [daymel.marrero@dhl.com]<br clear=\"none\" />\n<b>Sent:</b> 4/19/2024 9:20 PM<br clear=\"none\" />\n<b>To:</b> silvia.velazquez@dhl.com<br clear=\"none\" />\n<b>Subject:</b> ITEM ON HOLD &mdash; Bedabox LLC dba Shipmonk - NV RUBY HAS FULFILLMENT LLC 5122498. [ ref:!00D5t08h73.!5009K0CFABV:ref ]<br clear=\"none\" />\n<br clear=\"none\" />\nThis is a test email for feeds testing<img src=\"https://dhlglobalmail--dev08.sandbox.my.salesforce.com/servlet/servlet.ImageServer?oid=00D5t0000008h73&esid=0189K000000nynp&from=int\" /><br clear=\"none\" />\n<br clear=\"none\" />\nref:!00D5t08h73.!5009K0CFABV:ref<img src=\"https://dhlglobalmail--dev08.sandbox.my.salesforce.com/servlet/servlet.ImageServer?oid=00D5t0000008h73&esid=0189K000000nypR&from=int\"><br><br></body>\n</html>",
+            "CreatedDate": "2024-04-20T01:21:12.000Z",
+            "Attachments": null
+        },
+        {
+            "CreatedBy": "Daymel Marrero",
+            "EventName": "Email",
+            "EmailToAddress": "daymel.marrero@dhl.com",
+            "EmailSubject": "RE: ITEM ON HOLD — Bedabox LLC dba Shipmonk - NV RUBY HAS FULFILLMENT LLC 5122498.    [ ref:!00D5t08h73.!5009K0CFABV:ref ]",
+            "EmailMessageDate": "2024-04-25T17:19:18.000Z",
+            "EmailFromAddress": "daymel.marrero@dhl.com",
+            "EmailBody": "<html>\n<head>\n\t<title></title>\n</head>\n<body><br clear=\"none\" />\nAnother email with 3 attachments<br clear=\"none\" />\n<br clear=\"none\" />\n--------------- Original Message ---------------<br clear=\"none\" />\n<b>From:</b> Daymel Marrero [daymel.marrero@dhl.com]<br clear=\"none\" />\n<b>Sent:</b> 4/25/2024 12:26 PM<br clear=\"none\" />\n<b>To:</b> daymel.marrero@dhl.com<br clear=\"none\" />\n<b>Subject:</b> RE: ITEM ON HOLD &mdash; Bedabox LLC dba Shipmonk - NV RUBY HAS FULFILLMENT LLC 5122498. [ ref:!00D5t08h73.!5009K0CFABV:ref ]<br clear=\"none\" />\n<br clear=\"none\" />\nThis is an email with an attachment<br clear=\"none\" />\n<br clear=\"none\" />\n<br clear=\"none\" />\n--------------- Original Message ---------------<br clear=\"none\" />\n<b>From:</b> Daymel Marrero [daymel.marrero@dhl.com]<br clear=\"none\" />\n<b>Sent:</b> 4/19/2024 9:25 PM<br clear=\"none\" />\n<b>To:</b> silvia.velazquez@dhl.com<br clear=\"none\" />\n<b>Subject:</b> RE: ITEM ON HOLD &mdash; Bedabox LLC dba Shipmonk - NV RUBY HAS FULFILLMENT LLC 5122498. [ ref:!00D5t08h73.!5009K0CFABV:ref ]<br clear=\"none\" />\n<br clear=\"none\" />\nThis is a second email created to test the feeds<br clear=\"none\" />\n<br clear=\"none\" />\n<br clear=\"none\" />\n--------------- Original Message ---------------<br clear=\"none\" />\n<b>From:</b> Daymel Marrero [daymel.marrero@dhl.com]<br clear=\"none\" />\n<b>Sent:</b> 4/19/2024 9:20 PM<br clear=\"none\" />\n<b>To:</b> silvia.velazquez@dhl.com<br clear=\"none\" />\n<b>Subject:</b> ITEM ON HOLD &mdash; Bedabox LLC dba Shipmonk - NV RUBY HAS FULFILLMENT LLC 5122498. [ ref:!00D5t08h73.!5009K0CFABV:ref ]<br clear=\"none\" />\n<br clear=\"none\" />\nThis is a test email for feeds testing<img src=\"https://dhlglobalmail--dev08.sandbox.my.salesforce.com/servlet/servlet.ImageServer?oid=00D5t0000008h73&esid=0189K000000nynp&from=int\" /><br clear=\"none\" />\n<br clear=\"none\" />\nref:!00D5t08h73.!5009K0CFABV:ref<img src=\"https://dhlglobalmail--dev08.sandbox.my.salesforce.com/servlet/servlet.ImageServer?oid=00D5t0000008h73&esid=0189K000000nypR&from=int\" /><br clear=\"none\" />\n&nbsp;<img src=\"https://dhlglobalmail--dev08.sandbox.my.salesforce.com/servlet/servlet.ImageServer?oid=00D5t0000008h73&esid=0189K000000ohmX&from=int\" /><br clear=\"none\" />\n&nbsp;<img src=\"https://dhlglobalmail--dev08.sandbox.my.salesforce.com/servlet/servlet.ImageServer?oid=00D5t0000008h73&esid=0189K000000oiFZ&from=int\"><br><br></body>\n</html>",
+            "CreatedDate": "2024-04-25T17:18:40.000Z",
+            "Attachments": [
+                {
+                    "FileType": "snote",
+                    "FileSize": 11,
+                    "Filename": "Test",
+                    "ContentVersionId": "0685t0000034vWEAAY"
+                },
+                {
+                    "FileType": "jpg",
+                    "FileSize": 7006,
+                    "Filename": "barcode",
+                    "ContentVersionId": "0685t0000035ARBAA2"
+                },
+                {
+                    "FileType": "pdf",
+                    "FileSize": 52496,
+                    "Filename": "HoldsBarcode",
+                    "ContentVersionId": "0685t0000035ARfAAM"
+                }
+            ]
+        },
+        {
+            "CreatedBy": "Yaneivys Gutierrez",
+            "OldStatus": "Open",
+            "NewStatus": "Closed",
+            "EventName": "Status Changed",
+            "CreatedDate": "2024-06-13T16:22:58.000Z"
+        },
+        {
+            "CreatedBy": "Yaneivys Gutierrez",
+            "OldStatus": "Closed",
+            "NewStatus": "Open",
+            "EventName": "Status Changed",
+            "CreatedDate": "2024-06-13T16:23:13.000Z"
+        },
+        {
+            "CreatedBy": "Holds Portal Integration",
+            "OldStatus": "Open",
+            "NewStatus": "Closed",
+            "EventName": "Status Changed",
+            "CreatedDate": "2024-06-19T16:10:52.000Z"
+        },
+        {
+            "CreatedBy": "Holds Portal Integration",
+            "OldStatus": "Closed",
+            "NewStatus": "Open",
+            "EventName": "Status Changed",
+            "CreatedDate": "2024-06-19T16:11:07.000Z"
+        }
+    ],
+    "TotalPalletCountOnPlacard": 10,
+    "Status": "Released",
+    "QtyOfInternationalItems": 3,
+    "QtyOfGroundItems": 10,
+    "QtyOfExpeditedMAXItems": 7,
+    "QtyOfExpeditedItems": 2,
+    "LastModifiedDate": "2024-06-19T16:11:07.000Z",
+    "IsClosed": false,
+    "Id": "4",
+    "HoldType": "NO SLOT FOUND",
+    "Files": [
+        {
+            "FileType": "jpg",
+            "FileSize": 18222,
+            "Filename": "test image",
+            "CreatorName": "Abc",
+            "CreatedDate": "2024-04-30T09:18:28.000Z",
+            "ContentVersionId": "0689K000003PAiRUAW"
+        },
+        {
+            "FileType": "jpg",
+            "FileSize": 16880,
+            "Filename": "Deadline",
+            "CreatorName": "Abc",
+            "CreatedDate": "2024-04-30T09:33:27.000Z",
+            "ContentVersionId": "0689K000003PIfxQAG"
+        },
+        {
+            "FileType": "jpg",
+            "FileSize": 16881,
+            "Filename": "File2",
+            "CreatorName": "Abc",
+            "CreatedDate": "2024-04-20T09:33:27.000Z",
+            "ContentVersionId": "0689K000003PIfxQAG"
+        }
+    ],
+    "Facility": "DGM Los Angeles - LAX",
+    "CustomerNumber": "6543",
+    "CreatorName": "David Miller",
+    "CreatedDate": "2024-03-07T13:23:34.000+0000",
+    "ClosedDate": null,
+    "CaseNumber": "4",
+    "CaseComments": [
+        {
+            "EventName": "Case Comment Post",
+            "CreatedDate": "2024-04-30T14:10:46.000Z",
+            "CreatedBy": "John Doe",
+            "Comment": "This is a new custom comment that was edited"
+        },
+        {
+            "EventName": "Case Comment Post",
+            "CreatedDate": "2024-05-01T16:23:16.000Z",
+            "CreatedBy": "Daymel Marrero",
+            "Comment": "This is another comment created by me"
+        },
+        {
+            "EventName": "Case Comment Post",
+            "CreatedDate": "2024-05-01T19:06:31.000Z",
+            "CreatedBy": "Daymel Marrero",
+            "Comment": "This is a comment in this section ashgasdjlkhadf"
+        },
+        {
+            "EventName": "Case Comment Post",
+            "CreatedDate": "2024-05-07T13:24:23.000Z",
+            "CreatedBy": "Daymel Marrero",
+            "Comment": "This is a comment"
+        },
+        {
+            "EventName": "Case Comment Post",
+            "CreatedDate": "2024-05-16T19:52:02.000Z",
+            "CreatedBy": "Daymel Marrero",
+            "Comment": "This is a new comment about this case"
+        },
+        {
+            "EventName": "Case Comment Post",
+            "CreatedDate": "2024-06-03T13:19:16.000Z",
+            "CreatedBy": "Daymel Marrero",
+            "Comment": "This is a new comment"
+        },
+        {
+            "EventName": "Case Comment Post",
+            "CreatedDate": "2024-06-19T16:38:07.000Z",
+            "CreatedBy": "Yaneivys Gutierrez",
+            "Comment": "testing comment from postman"
+        },
+        {
+            "EventName": "Case Comment Post",
+            "CreatedDate": "2024-06-18T14:46:07.000Z",
+            "CreatedBy": "Utkarsh Gupta",
+            "Comment": "latest comment on this case via wiremock"
+        },
+        {
+            "EventName": "Case Comment Post",
+            "CreatedDate": "2024-06-10T14:46:07.000Z",
+            "CreatedBy": "Nisha Dhami",
+            "Comment": "latest comment on this case via wiremock"
+        }
+    ],
+    "BOLNumber": "1234",
+    "Account": "David Miller"
+    }
+  }
+}

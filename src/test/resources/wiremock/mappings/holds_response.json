@@ -1,0 +1,193 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern": "/services/data/v60.0/query/(.*)"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "totalSize": 10,
+      "done": true,
+      "records": [
+        {
+          "attributes": {
+            "type": "Case",
+            "url": "/services/data/v60.0/sobjects/Case/1"
+          },
+          "Id": "1",
+          "Status": "Open",
+          "Account": {
+            "attributes": {
+              "type": "Account",
+              "url": "/services/data/v60.0/sobjects/Account/0010E00001dU3tRQAS"
+            },
+            "Name": "Alice Johnson",
+            "IF_SAP__c": 5678
+          },
+          "NA_Total_Pallet_Count_On_Placard__c": 10,
+          "NA_Hold_Type__c": "BARCODE QUALITY",
+          "NA_BOL_Number__c": "9876",
+          "Qty_Of_Expedited_MAX_items__c": 7,
+          "Qty_Of_Expedited_items__c": 2,
+          "Qty_Of_Ground_items__c": 10,
+          "NA_Qty_Of_International_Items__c": 3,
+          "CreatedDate": "2024-03-07T13:23:34.000+0000",
+          "NA_Mail_Terminal__c": "ATL"
+        },
+        {
+          "attributes": {
+            "type": "Case",
+            "url": "/services/data/v60.0/sobjects/Case/2"
+          },
+          "Id": "2",
+          "Status": "Info Required",
+          "Account": {
+            "attributes": {
+              "type": "Account",
+              "url": "/services/data/v60.0/sobjects/Account/0010E00001dU3tRQAS"
+            },
+            "Name": "Bob Smith",
+            "IF_SAP__c": 1234
+          },
+          "NA_Total_Pallet_Count_On_Placard__c": 10,
+          "NA_Hold_Type__c": "SORT CODE ISSUE",
+          "NA_BOL_Number__c": "5678",
+          "Qty_Of_Expedited_MAX_items__c": 7,
+          "Qty_Of_Expedited_items__c": 2,
+          "Qty_Of_Ground_items__c": 10,
+          "NA_Qty_Of_International_Items__c": 3,
+          "CreatedDate": "2024-03-12T13:01:02.000+0000",
+          "NA_Mail_Terminal__c": "CVG"
+        },
+        {
+          "attributes": {
+            "type": "Case",
+            "url": "/services/data/v60.0/sobjects/Case/3"
+          },
+          "Id": "3",
+          "Status": "Returned to Customer",
+          "Account": {
+            "attributes": {
+              "type": "Account",
+              "url": "/services/data/v60.0/sobjects/Account/0010E00001dU3tRQAS"
+            },
+            "Name": "Emily Brown",
+            "IF_SAP__c": 9876
+          },
+          "NA_Total_Pallet_Count_On_Placard__c": 10,
+          "NA_Hold_Type__c": "LATE ARRIVAL",
+          "NA_BOL_Number__c": "1122",
+          "Qty_Of_Expedited_MAX_items__c": 7,
+          "Qty_Of_Expedited_items__c": 2,
+          "Qty_Of_Ground_items__c": 10,
+          "NA_Qty_Of_International_Items__c": 3,
+          "CreatedDate": "2024-03-28T11:28:30.000+0000",
+          "NA_Mail_Terminal__c": "DFW"
+        },
+        {
+          "attributes": {
+            "type": "Case",
+            "url": "/services/data/v60.0/sobjects/Case/4"
+          },
+          "Id": "4",
+          "Status": "Released",
+          "Account": {
+            "attributes": {
+              "type": "Account",
+              "url": "/services/data/v60.0/sobjects/Account/0010E00001dU3tRQAS"
+            },
+            "Name": "David Miller",
+            "IF_SAP__c": 6543
+          },
+          "NA_Total_Pallet_Count_On_Placard__c": 10,
+          "NA_Hold_Type__c": "NO SLOT FOUND",
+          "NA_BOL_Number__c": "5566",
+          "Qty_Of_Expedited_MAX_items__c": 7,
+          "Qty_Of_Expedited_items__c": 2,
+          "Qty_Of_Ground_items__c": 10,
+          "NA_Qty_Of_International_Items__c": 3,
+          "CreatedDate": "2024-03-29T11:34:58.000+0000",
+          "NA_Mail_Terminal__c": "ATL"
+        },
+        {
+          "attributes": {
+            "type": "Case",
+            "url": "/services/data/v60.0/sobjects/Case/6"
+          },
+          "Id": "6",
+          "Status": "Released",
+          "Account": {
+            "attributes": {
+              "type": "Account",
+              "url": "/services/data/v60.0/sobjects/Account/0010E00001dU3tRQAS"
+            },
+            "Name": "James Anderson",
+            "IF_SAP__c": 2345
+          },
+          "NA_Total_Pallet_Count_On_Placard__c": 10,
+          "NA_Hold_Type__c": "MISSING IAC",
+          "NA_BOL_Number__c": "3344",
+          "Qty_Of_Expedited_MAX_items__c": 7,
+          "Qty_Of_Expedited_items__c": 2,
+          "Qty_Of_Ground_items__c": 10,
+          "NA_Qty_Of_International_Items__c": 3,
+          "CreatedDate": "2024-04-02T15:10:17.000+0000",
+          "NA_Mail_Terminal__c": "DFW"
+        },
+        {
+          "attributes": {
+            "type": "Case",
+            "url": "/services/data/v60.0/sobjects/Case/7"
+          },
+          "Id": "7",
+          "Status": "Info Required",
+          "Account": {
+            "attributes": {
+              "type": "Account",
+              "url": "/services/data/v60.0/sobjects/Account/0010E00001dU3tRQAS"
+            },
+            "Name": "Olivia Martinez",
+            "IF_SAP__c": 8765
+          },
+          "NA_Total_Pallet_Count_On_Placard__c": 10,
+          "NA_Hold_Type__c": "SORT CODE ISSUE",
+          "NA_BOL_Number__c": "5566",
+          "Qty_Of_Expedited_MAX_items__c": 7,
+          "Qty_Of_Expedited_items__c": 2,
+          "Qty_Of_Ground_items__c": 10,
+          "NA_Qty_Of_International_Items__c": 3,
+          "CreatedDate": "2024-04-03T12:44:27.000+0000",
+          "NA_Mail_Terminal__c": "ATL"
+        },
+        {
+          "attributes": {
+            "type": "Case",
+            "url": "/services/data/v60.0/sobjects/Case/8"
+          },
+          "Id": "8",
+          "Status": "Returned to Customer",
+          "Account": {
+            "attributes": {
+              "type": "Account",
+              "url": "/services/data/v60.0/sobjects/Account/0010E00001dU3tRQAS"
+            },
+            "Name": "Lucas Taylor",
+            "IF_SAP__c": 3456
+          },
+          "NA_Total_Pallet_Count_On_Placard__c": 10,
+          "NA_Hold_Type__c": "MISSING IAC",
+          "NA_BOL_Number__c": "7788",
+          "Qty_Of_Expedited_MAX_items__c": 7,
+          "Qty_Of_Expedited_items__c": 2,
+          "Qty_Of_Ground_items__c": 10,
+          "NA_Qty_Of_International_Items__c": 3,
+          "CreatedDate": "2024-04-04T14:55:01.000+0000",
+          "NA_Mail_Terminal__c": "CVG"
+        }
+      ]
+    }
+  }
+}

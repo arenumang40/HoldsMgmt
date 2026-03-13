@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern": "/services/apexrest/HoldCaseFile\\?contentVersionId=0689K000003PAiRUAW"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "testImage.png",
+    "headers": {
+      "Content-Type": "image/png"
+    }
+  }
+}

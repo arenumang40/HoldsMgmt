@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/services/oauth2/token"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": "{\"access_token\":\"00D0E00000059Aa!AQEAQJUPy9T3vInmo.Exp0TS3ohec0ODIzRC4_Tm4VXn5Yh2nLvTWSVotbJHsg7lKgv2BjIYgpIqr7iVGpz5n5Lu.AmVVX8f\",\"instance_url\":\"https://dhlglobalmail--sit2.sandbox.my.salesforce.com\",\"id\":\"https://test.salesforce.com/id/00D0E00000059AaUAI/005bh000002iUZ7AAM\",\"token_type\":\"Bearer\",\"issued_at\":\"1719722193871\",\"signature\":\"o0+uhDPq7WYE+Ula6wLszkmKfMCCYSt8eu6RPqbSa4s=\"}"
+  }
+}
