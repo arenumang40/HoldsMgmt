@@ -89,4 +89,4 @@ You can find steps in [feature files](/apps-holds-mgmt/src/test/src/test/resourc
 
 # Contacts
 
- - [Pavel Kacer](mailto:pavel.kacer@dhl.com)
+ - [Umang Agrawal](mailto:umang.agrawal@dhl.com)
